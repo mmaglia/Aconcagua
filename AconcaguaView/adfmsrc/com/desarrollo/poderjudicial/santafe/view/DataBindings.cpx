@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.12.24" id="DataBindings"
+             SeparateXMLFiles="false" Package="com.desarrollo.poderjudicial.santafe.view" ClientType="Generic">
+  <pageMap>
+    <page path="/digitalizacion.jspx" usageId="com_desarrollo_poderjudicial_santafe_view_consultaLegajosPageDef"/>
+    <page path="/seguimientoDigitalizacion.jspx"
+          usageId="com_desarrollo_poderjudicial_santafe_view_seguimientoDigitalizacionPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="com_desarrollo_poderjudicial_santafe_view_consultaLegajosPageDef"
+          path="com.desarrollo.poderjudicial.santafe.view.pageDefs.consultaLegajosPageDef"/>
+    <page id="com_desarrollo_poderjudicial_santafe_view_seguimientoDigitalizacionPageDef"
+          path="com.desarrollo.poderjudicial.santafe.view.pageDefs.seguimientoDigitalizacionPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="DigitalizacionSessionEJBBean"
+        path="com.desarrollo.poderjudicial.santafe.model.DigitalizacionSessionEJBBean"/>
+  </dataControlUsages>
+</Application>

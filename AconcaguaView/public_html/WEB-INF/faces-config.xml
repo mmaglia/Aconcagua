@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<faces-config version="2.1" xmlns="http://java.sun.com/xml/ns/javaee">
+  <application>
+    <default-render-kit-id>oracle.adf.rich</default-render-kit-id>
+  </application>
+  <managed-bean>
+    <managed-bean-name>consulta</managed-bean-name>
+    <managed-bean-class>com.desarrollo.poderjudicial.santafe.view.beans.ConsultaBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    <managed-property>
+      <property-name>detalle</property-name>
+      <property-class>com.desarrollo.poderjudicial.santafe.view.beans.DetalleBean</property-class>
+      <value>#{detalle}</value>
+    </managed-property>
+  </managed-bean>
+  <managed-bean>
+    <managed-bean-name>detalle</managed-bean-name>
+    <managed-bean-class>com.desarrollo.poderjudicial.santafe.view.beans.DetalleBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+  <managed-bean>
+    <managed-bean-name>seguimiento</managed-bean-name>
+    <managed-bean-class>com.desarrollo.poderjudicial.santafe.view.beans.SeguimientoBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    <managed-property>
+      <property-name>detalle</property-name>
+      <property-class>com.desarrollo.poderjudicial.santafe.view.beans.DetalleBean</property-class>
+      <value>#{detalle}</value>
+    </managed-property>
+  </managed-bean>
+  <managed-bean>
+    <managed-bean-name>login</managed-bean-name>
+    <managed-bean-class>com.desarrollo.poderjudicial.santafe.view.beans.LoginBean</managed-bean-class>
+    <managed-bean-scope>request</managed-bean-scope>
+  </managed-bean>
+</faces-config>

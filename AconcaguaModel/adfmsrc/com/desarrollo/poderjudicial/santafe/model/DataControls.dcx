@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="12.2.1.12.24" id="DataControls"
+                    Package="com.desarrollo.poderjudicial.santafe.model">
+  <AdapterDataControl id="DigitalizacionSessionEJBBean" FactoryClass="oracle.adf.model.adapter.bean.BeanDCFactoryImpl"
+                      ImplDef="oracle.adfinternal.model.adapter.ejb.EjbDCDefinition" SupportsTransactions="false"
+                      SupportsSortCollection="true" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="true"
+                      Definition="com.desarrollo.poderjudicial.santafe.model.session.DigitalizacionSessionEJBBean"
+                      BeanClass="com.desarrollo.poderjudicial.santafe.model.session.DigitalizacionSessionEJBBean"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <ejb-definition ejb-version="3.x" ejb-name="DigitalizacionSessionEJB" ejb-type="Session"
+                      ejb-business-interface="com.desarrollo.poderjudicial.santafe.model.session.DigitalizacionSessionEJBLocal"
+                      ejb-interface-type="local" initial-context-factory="weblogic.jndi.WLInitialContextFactory"
+                      DataControlHandler="oracle.adf.model.adapter.bean.jpa.JPQLDataFilterHandler"
+                      AccessMode="scrollable" EagerPersist="false" xmlns="http://xmlns.oracle.com/adfm/adapter/ejb"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>

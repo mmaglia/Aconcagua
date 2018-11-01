@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProviderSettings xmlns="http://xmlns.oracle.com/ide/hash">
+   <hash n="dataTypeSettings">
+      <value n="databaseType" v="Oracle Database"/>
+      <value n="databaseVersion" v="110"/>
+   </hash>
+   <value n="id" v="65066d16-c8a2-4f2b-ad98-0bf39aacead0"/>
+   <value n="name" v="Aconcagua"/>
+</ProviderSettings>

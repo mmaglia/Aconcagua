@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.12.24"
+                id="seguimientoDigitalizacionPageDef" Package="com.desarrollo.poderjudicial.santafe.view.pageDefs">
+    <parameters/>
+    <executables>
+        <variableIterator id="variables"/>
+        <iterator Binds="root" RangeSize="25" DataControl="DigitalizacionSessionEJBBean"
+                  id="DigitalizacionSessionEJBBeanIterator"/>
+        <accessorIterator MasterBinding="DigitalizacionSessionEJBBeanIterator" Binds="daperFindAll" RangeSize="22"
+                          DataControl="DigitalizacionSessionEJBBean"
+                          BeanClass="com.desarrollo.poderjudicial.santafe.model.entidades.Daper"
+                          id="daperFindAllIterator" ChangeEventPolicy="none"/>
+        <searchRegion Binds="multimediaFindAllIterator" Criteria=""
+                      Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="multimediaFindAllQuery"/>
+        <methodIterator id="obtenerMultimediaByDniIterator" Binds="obtenerMultimediaByDni.result"
+                        DataControl="DigitalizacionSessionEJBBean" RangeSize="25"
+                        BeanClass="com.desarrollo.poderjudicial.santafe.model.entidades.Multimedia"
+                        ChangeEventPolicy="ppr"/>
+        <searchRegion Binds="obtenerMultimediaByDniIterator" Criteria=""
+                      Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="MultimediaQuery"/>
+        <searchRegion Binds="daperFindAllIterator" Criteria=""
+                      Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer" id="daperFindAllQuery"/>
+    </executables>
+    <bindings>
+        <tree IterBinding="obtenerMultimediaByDniIterator" id="Multimedia">
+            <nodeDefinition DefName="com.desarrollo.poderjudicial.santafe.model.entidades.Multimedia" Name="Multimedia">
+                <AttrNames>
+                    <Item Value="fecha"/>
+                    <Item Value="fojas"/>
+                    <Item Value="idMultimedia"/>
+                    <Item Value="descripcion"/>
+                    <Item Value="nombreArchivo"/>
+                </AttrNames>
+                <Accessors>
+                    <Item Value="tipoMultimedia"/>
+                    <Item Value="tipoExtension"/>
+                </Accessors>
+            </nodeDefinition>
+            <nodeDefinition DefName="com.desarrollo.poderjudicial.santafe.model.entidades.TipoMultimedia">
+                <AttrNames>
+                    <Item Value="descripcion"/>
+                </AttrNames>
+            </nodeDefinition>
+            <nodeDefinition DefName="com.desarrollo.poderjudicial.santafe.model.entidades.TipoExtension">
+                <AttrNames>
+                    <Item Value="descripcion"/>
+                </AttrNames>
+            </nodeDefinition>
+        </tree>
+        <methodAction id="obtenerMultimediaByDni" RequiresUpdateModel="true" Action="invokeMethod"
+                      MethodName="obtenerMultimediaByDni" IsViewObjectMethod="false"
+                      DataControl="DigitalizacionSessionEJBBean"
+                      InstanceName="bindings.obtenerMultimediaByDni.dataControl.dataProvider"
+                      ReturnName="data.DigitalizacionSessionEJBBean.methodResults.obtenerMultimediaByDni_obtenerMultimediaByDni_dataControl_dataProvider_obtenerMultimediaByDni_result">
+            <NamedData NDName="nroDoc" NDValue="#{bindings.dpnrodoc.inputValue}" NDType="java.lang.Long"/>
+            <NamedData NDName="tipoDoc" NDValue="#{bindings.dptipdoc.inputValue}" NDType="java.lang.Long"/>
+            <NamedData NDName="tipoMultimedia" NDValue="#{seguimiento.grupo}" NDType="java.lang.Integer"/>
+        </methodAction>
+        <action IterBinding="obtenerMultimediaByDniIterator" id="First"
+                InstanceName="DigitalizacionSessionEJBBean.dataProvider" DataControl="DigitalizacionSessionEJBBean"
+                RequiresUpdateModel="true" Action="first"/>
+        <action IterBinding="obtenerMultimediaByDniIterator" id="Last" RequiresUpdateModel="true" Action="last"/>
+        <action IterBinding="obtenerMultimediaByDniIterator" id="Next" RequiresUpdateModel="true" Action="next"/>
+        <action IterBinding="obtenerMultimediaByDniIterator" id="Previous" RequiresUpdateModel="true"
+                Action="previous"/>
+        <attributeValues IterBinding="daperFindAllIterator" id="dpapynom">
+            <AttrNames>
+                <Item Value="dpapynom"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="daperFindAllIterator" id="dpnrodoc">
+            <AttrNames>
+                <Item Value="dpnrodoc"/>
+            </AttrNames>
+        </attributeValues>
+        <attributeValues IterBinding="daperFindAllIterator" id="dptipdoc">
+            <AttrNames>
+                <Item Value="dptipdoc"/>
+            </AttrNames>
+        </attributeValues>
+        <tree IterBinding="daperFindAllIterator" id="daperFindAll">
+            <nodeDefinition DefName="com.desarrollo.poderjudicial.santafe.model.entidades.Daper" Name="daperFindAll0">
+                <AttrNames>
+                    <Item Value="dpnroleg"/>
+                    <Item Value="dpapynom"/>
+                    <Item Value="dpnrodoc"/>
+                </AttrNames>
+            </nodeDefinition>
+        </tree>
+        <methodAction id="obtenerMultimediasPorPersona" RequiresUpdateModel="true" Action="invokeMethod"
+                      MethodName="obtenerMultimediasPorPersona" IsViewObjectMethod="false"
+                      DataControl="DigitalizacionSessionEJBBean"
+                      InstanceName="bindings.obtenerMultimediasPorPersona.dataControl.dataProvider"
+                      ReturnName="data.DigitalizacionSessionEJBBean.methodResults.obtenerMultimediasPorPersona_obtenerMultimediasPorPersona_dataControl_dataProvider_obtenerMultimediasPorPersona_result">
+            <NamedData NDName="nroDoc" NDType="java.lang.Long"/>
+            <NamedData NDName="tipoDoc" NDType="java.lang.Long"/>
+        </methodAction>
+        <methodAction id="obtenerTiposCursos" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="obtenerTiposCursos" IsViewObjectMethod="false" DataControl="DigitalizacionSessionEJBBean"
+                  InstanceName="bindings.obtenerTiposCursos.dataControl.dataProvider"
+                  ReturnName="data.DigitalizacionSessionEJBBean.methodResults.obtenerTiposCursos_obtenerTiposCursos_dataControl_dataProvider_obtenerTiposCursos_result"/>
+        <methodAction id="obtenerTiposInstitutos" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="obtenerTiposInstitutos" IsViewObjectMethod="false"
+                  DataControl="DigitalizacionSessionEJBBean"
+                  InstanceName="bindings.obtenerTiposInstitutos.dataControl.dataProvider"
+                  ReturnName="data.DigitalizacionSessionEJBBean.methodResults.obtenerTiposInstitutos_obtenerTiposInstitutos_dataControl_dataProvider_obtenerTiposInstitutos_result"/>
+        <attributeValues IterBinding="obtenerMultimediaByDniIterator" id="nombreArchivo">
+            <AttrNames>
+                <Item Value="nombreArchivo"/>
+            </AttrNames>
+        </attributeValues>
+    </bindings>
+</pageDefinition>

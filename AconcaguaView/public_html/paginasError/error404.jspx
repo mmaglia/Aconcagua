@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document theme="medium" title="Poder Judicial de la Provincia Santa Fe" id="d1">
+            <af:form id="f1">
+                <af:panelGridLayout id="pgl1">
+                    <af:gridRow height="100%" id="gr1">
+                        <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                            <af:decorativeBox theme="medium" id="db1" styleClass="AFStretchWidth">
+                                <f:facet name="center">
+                                    <af:panelStretchLayout id="psl1">
+                                        <f:facet name="center">
+                                            <af:panelGroupLayout inlineStyle="margin-top: 10px;" valign="bottom" layout="vertical" halign="start"
+                                                                 id="pgl2">
+                                                <af:outputText value="Página no encontrada. Por favor consulte con Informática"
+                                                               id="ot2"/>
+                                            </af:panelGroupLayout>
+                                        </f:facet>
+                                        <f:facet name="top">
+                                            <af:panelStretchLayout id="psl2" startWidth="200px">
+                                                <f:facet name="center">
+                                                    <af:outputText value="Consulta y Digitalizaci&#243;n de Legajos del Personal"
+                                                                   id="ot1"
+                                                                   inlineStyle="right:30px; font-size:xx-large; font-weight:bold; text-align:center; border-bottom-style:double; padding-bottom:50px; padding-top:0px;"/>
+                                                </f:facet>
+                                                <f:facet name="start">
+                                                    <af:image inlineStyle="top: -6px; left:6px;"
+                                                              source="/graphics/logo_pjsf_negro.gif" shortDesc=""
+                                                              id="i1"/>
+                                                </f:facet>
+                                                <f:facet name="end"/>
+                                            </af:panelStretchLayout>
+                                        </f:facet>
+                                    </af:panelStretchLayout>
+                                </f:facet>
+                            </af:decorativeBox>
+                        </af:gridCell>
+                    </af:gridRow>
+                </af:panelGridLayout>
+            </af:form>
+            <f:facet name="metaContainer">
+                <af:outputText value='&lt;link href="#{facesContext.externalContext.requestContextPath}/graphics/favicon.ico" rel="shortcut icon">'
+                               id="ot4"/>
+            </f:facet>
+        </af:document>
+    </f:view>
+</jsp:root>

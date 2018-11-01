@@ -1,0 +1,1017 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
+  <name>MULTIMEDIA</name>
+  <columns>
+    <column>
+      <name>ID_MULTIMEDIA</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ID_MULTIMEDIA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>TIPO_DOC</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>TIPO_DOC</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>NRO_DOC</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>NRO_DOC</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>ID_TIPO_MULTIMEDIA</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">3</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ID_TIPO_MULTIMEDIA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>ID_SEDE</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">2</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ID_SEDE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>ID_TIPO_EXTENSION</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">3</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ID_TIPO_EXTENSION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>FECHA</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FECHA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>ORDEN</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">5</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ORDEN</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>FOJAS</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">3</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FOJAS</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>NOMBRE_ARCHIVO</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">100</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>NOMBRE_ARCHIVO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DESCRIPCION</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">100</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DESCRIPCION</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>USUARIO_APP</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">50</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>USUARIO_APP</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_MULTIMEDIA_TIPODOC</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>TIPO_DOC</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MULTIMEDIA</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>NO_ACTION</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_MULTIMEDIA_TIPODOC</name>
+            <childObjectNames>
+              <childObjectName>TIPO_DOC</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033458</name>
+        <childObjectNames>
+          <childObjectName>IDTIPODOC</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>TIPODOC</name>
+          <identifier class="java.math.BigDecimal">190681</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_MULTIMEDIA_TIPO_EXTENSION</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>ID_TIPO_EXTENSION</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MULTIMEDIA</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>NO_ACTION</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_MULTIMEDIA_TIPO_EXTENSION</name>
+            <childObjectNames>
+              <childObjectName>ID_TIPO_EXTENSION</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0011553</name>
+        <childObjectNames>
+          <childObjectName>ID_TIPO_EXTENSION</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>TIPO_EXTENSION</name>
+          <identifier class="java.math.BigDecimal">98663</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_MULTIMEDIA_TIPO_MULTIMEDIA</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>ID_TIPO_MULTIMEDIA</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MULTIMEDIA</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>NO_ACTION</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_MULTIMEDIA_TIPO_MULTIMEDIA</name>
+            <childObjectNames>
+              <childObjectName>ID_TIPO_MULTIMEDIA</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0011552</name>
+        <childObjectNames>
+          <childObjectName>ID_TIPO_MULTIMEDIA</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>TIPO_MULTIMEDIA</name>
+          <identifier class="java.math.BigDecimal">98659</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>SYS_C0011554</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>ID_MULTIMEDIA</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>MULTIMEDIA</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.NameBasedID">
+        <name>SYS_C0011554</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>MULTIMEDIA</name>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>PERSONALSFE</schemaName>
+        <type>INDEX</type>
+      </indexID>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SYS_C0011554</name>
+            <childObjectNames>
+              <childObjectName>ID_MULTIMEDIA</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <indexes>
+    <index>
+      <name>FKI_MULTIMEDIA_TIPODOC</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>TIPO_DOC</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>TIPO_DOC</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_MULTIMEDIA_TIPODOC</name>
+                  <identifier class="java.math.BigDecimal">187037</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>MULTIMEDIA</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_MULTIMEDIA_TIPODOC</name>
+            <identifier class="java.math.BigDecimal">187037</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>MULTIMEDIA_INDEX_NRO_DOC</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>TIPO_DOC</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>TIPO_DOC</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>MULTIMEDIA_INDEX_NRO_DOC</name>
+                  <identifier class="java.math.BigDecimal">819937</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>MULTIMEDIA</name>
+                    <identifier class="java.math.BigDecimal">819642</identifier>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+        <columnExpression>
+          <expressionSource>NRO_DOC</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>NRO_DOC</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>MULTIMEDIA_INDEX_NRO_DOC</name>
+                  <identifier class="java.math.BigDecimal">819937</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>MULTIMEDIA</name>
+                    <identifier class="java.math.BigDecimal">819642</identifier>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>MULTIMEDIA_INDEX_NRO_DOC</name>
+            <identifier class="java.math.BigDecimal">819937</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <identifier class="java.math.BigDecimal">819642</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>M_INDEX_ID_TIPO_EXTENSION</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>ID_TIPO_EXTENSION</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>ID_TIPO_EXTENSION</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>M_INDEX_ID_TIPO_EXTENSION</name>
+                  <identifier class="java.math.BigDecimal">98671</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>MULTIMEDIA</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>M_INDEX_ID_TIPO_EXTENSION</name>
+            <identifier class="java.math.BigDecimal">98671</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>M_INDEX_ID_TIPO_MULTIMEDIA</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>ID_TIPO_MULTIMEDIA</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>ID_TIPO_MULTIMEDIA</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>M_INDEX_ID_TIPO_MULTIMEDIA</name>
+                  <identifier class="java.math.BigDecimal">98670</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>MULTIMEDIA</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>M_INDEX_ID_TIPO_MULTIMEDIA</name>
+            <identifier class="java.math.BigDecimal">98670</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>SYS_C0011554</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>ID_MULTIMEDIA</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>ID_MULTIMEDIA</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>SYS_C0011554</name>
+                  <identifier class="java.math.BigDecimal">98668</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>MULTIMEDIA</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SYS_C0011554</name>
+            <identifier class="java.math.BigDecimal">98668</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>MULTIMEDIA</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </index>
+  </indexes>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">Aconcagua</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>MULTIMEDIA</name>
+        <identifier class="java.math.BigDecimal">819642</identifier>
+        <schemaName>PERSONALSFE</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>0</maxExtent>
+        <minExtent>1</minExtent>
+        <percentFree>10</percentFree>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>TBS_PERSONAL</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleTableProperties</key>
+      <value class="oracle.javatools.db.ora.OracleTableProperties">
+        <parallelDegree>1</parallelDegree>
+        <tableCompression>NOCOMPRESS</tableCompression>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>PERSONALSFE</name>
+  </schema>
+</table>

@@ -1,0 +1,2355 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1211/offlinedb">
+  <name>DAPER</name>
+  <columns>
+    <column>
+      <name>ID_DAPER</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ID_DAPER</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPNROLEG</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPNROLEG</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPAPYNOM</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">50</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPAPYNOM</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPLUGNAC</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPLUGNAC</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPFECNAC</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPFECNAC</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPCOSEXO</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPCOSEXO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPECIVIL</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPECIVIL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPSITUAC</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPSITUAC</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPPROFES</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPPROFES</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPTIPDOC</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPTIPDOC</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPNRODOC</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPNRODOC</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPSERMIL</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPSERMIL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPDOMICI</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">50</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPDOMICI</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPTELEFO</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">15</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPTELEFO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPLOCALI</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">20</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPLOCALI</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPNPADRE</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPNPADRE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPNMADRE</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPNMADRE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPNCONYU</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPNCONYU</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPFECING</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPFECING</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPCARING</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPCARING</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPFEBACA</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPFEBACA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPCARBAJ</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPCARBAJ</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPMOTIBA</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">30</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPMOTIBA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPCODTIT</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPCODTIT</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPFECTIT</name>
+      <dataTypeUsage>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>DATE</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPFECTIT</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPCARMED</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPCARMED</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPGRUSAN</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">3</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPGRUSAN</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPFORJUR</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPFORJUR</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPARTESA</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPARTESA</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPRESULT</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">10</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <default class="java.lang.String">0</default>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPRESULT</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPDPATRI</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">1</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPDPATRI</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>DPCUIL</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">15</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DPCUIL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <name>FILLER</name>
+      <dataTypeUsage>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">6</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FILLER</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <identifier class="java.math.BigDecimal">828332</identifier>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_DAPER_ECIVIL</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPECIVIL</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>CASCADE</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_DAPER_ECIVIL</name>
+            <childObjectNames>
+              <childObjectName>DPECIVIL</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033457</name>
+        <childObjectNames>
+          <childObjectName>IDECIVIL</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>ECIVIL</name>
+          <identifier class="java.math.BigDecimal">190679</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_DAPER_ESTADO</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPSITUAC</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>CASCADE</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_DAPER_ESTADO</name>
+            <childObjectNames>
+              <childObjectName>DPSITUAC</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033459</name>
+        <childObjectNames>
+          <childObjectName>IDESTADO</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>ESTADO</name>
+          <identifier class="java.math.BigDecimal">190683</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_DAPER_FORMUJUR</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPFORJUR</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>CASCADE</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_DAPER_FORMUJUR</name>
+            <childObjectNames>
+              <childObjectName>DPFORJUR</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033462</name>
+        <childObjectNames>
+          <childObjectName>IDFORMUJUR</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>FORMUJUR</name>
+          <identifier class="java.math.BigDecimal">190689</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_DAPER_RESULCM</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPRESULT</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>CASCADE</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_DAPER_RESULCM</name>
+            <childObjectNames>
+              <childObjectName>DPRESULT</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033463</name>
+        <childObjectNames>
+          <childObjectName>IDRESULCM</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>RESULCM</name>
+          <identifier class="java.math.BigDecimal">190691</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_DAPER_SEXO</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPCOSEXO</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>CASCADE</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_DAPER_SEXO</name>
+            <childObjectNames>
+              <childObjectName>DPCOSEXO</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033465</name>
+        <childObjectNames>
+          <childObjectName>IDSEXO</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>SEXO</name>
+          <identifier class="java.math.BigDecimal">190695</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_DAPER_TIPOARTESANO</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPARTESA</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>CASCADE</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_DAPER_TIPOARTESANO</name>
+            <childObjectNames>
+              <childObjectName>DPARTESA</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033468</name>
+        <childObjectNames>
+          <childObjectName>IDARTESANO</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>TIPOARTESANO</name>
+          <identifier class="java.math.BigDecimal">190701</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_DAPER_TIPODOC</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPTIPDOC</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>CASCADE</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_DAPER_TIPODOC</name>
+            <childObjectNames>
+              <childObjectName>DPTIPDOC</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033458</name>
+        <childObjectNames>
+          <childObjectName>IDTIPODOC</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>TIPODOC</name>
+          <identifier class="java.math.BigDecimal">190681</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <name>FK_DAPER_TITULO</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPCODTIT</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <onDeleteAction>CASCADE</onDeleteAction>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FK_DAPER_TITULO</name>
+            <childObjectNames>
+              <childObjectName>DPCODTIT</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.ReferenceID">
+        <name>SYS_C0033460</name>
+        <childObjectNames>
+          <childObjectName>IDTITULO</childObjectName>
+        </childObjectNames>
+        <parent class="oracle.javatools.db.ReferenceID">
+          <name>TITULO</name>
+          <identifier class="java.math.BigDecimal">190685</identifier>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <subType>PKConstraint</subType>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <name>SYS_C0073254</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPTIPDOC</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>DPNRODOC</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.NameBasedID">
+        <name>SYS_C0073254</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>DAPER</name>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>PERSONALSFE</schemaName>
+        <type>INDEX</type>
+      </indexID>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SYS_C0073254</name>
+            <childObjectNames>
+              <childObjectName>DPTIPDOC</childObjectName>
+              <childObjectName>DPNRODOC</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+    <constraint class="oracle.javatools.db.UniqueConstraint">
+      <name>UNIQUE_DAPER</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.NameBasedID">
+          <name>ID_DAPER</name>
+          <parent class="oracle.javatools.db.NameBasedID">
+            <name>DAPER</name>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <indexID class="oracle.javatools.db.NameBasedID">
+        <name>UNIQUE_DAPER</name>
+        <parent class="oracle.javatools.db.NameBasedID">
+          <name>DAPER</name>
+          <schemaName>PERSONALSFE</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>PERSONALSFE</schemaName>
+        <type>INDEX</type>
+      </indexID>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>UNIQUE_DAPER</name>
+            <childObjectNames>
+              <childObjectName>ID_DAPER</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>UniqueConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <indexes>
+    <index>
+      <name>FKI_DAPER_ECIVIL</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPECIVIL</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPECIVIL</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_DAPER_ECIVIL</name>
+                  <identifier class="java.math.BigDecimal">272264</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_DAPER_ECIVIL</name>
+            <identifier class="java.math.BigDecimal">272264</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>FKI_DAPER_ESTADO</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPSITUAC</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPSITUAC</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_DAPER_ESTADO</name>
+                  <identifier class="java.math.BigDecimal">272265</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_DAPER_ESTADO</name>
+            <identifier class="java.math.BigDecimal">272265</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>FKI_DAPER_FORMUJUR</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPFORJUR</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPFORJUR</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_DAPER_FORMUJUR</name>
+                  <identifier class="java.math.BigDecimal">272266</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_DAPER_FORMUJUR</name>
+            <identifier class="java.math.BigDecimal">272266</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>FKI_DAPER_RESULCM</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPRESULT</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPRESULT</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_DAPER_RESULCM</name>
+                  <identifier class="java.math.BigDecimal">272267</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_DAPER_RESULCM</name>
+            <identifier class="java.math.BigDecimal">272267</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>FKI_DAPER_SEXO</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPCOSEXO</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPCOSEXO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_DAPER_SEXO</name>
+                  <identifier class="java.math.BigDecimal">272268</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_DAPER_SEXO</name>
+            <identifier class="java.math.BigDecimal">272268</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>FKI_DAPER_TIPOARTESANO</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPARTESA</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPARTESA</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_DAPER_TIPOARTESANO</name>
+                  <identifier class="java.math.BigDecimal">272269</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_DAPER_TIPOARTESANO</name>
+            <identifier class="java.math.BigDecimal">272269</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>FKI_DAPER_TIPODOC</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPTIPDOC</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPTIPDOC</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_DAPER_TIPODOC</name>
+                  <identifier class="java.math.BigDecimal">272270</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_DAPER_TIPODOC</name>
+            <identifier class="java.math.BigDecimal">272270</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>FKI_DAPER_TITULO</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPCODTIT</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPCODTIT</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>FKI_DAPER_TITULO</name>
+                  <identifier class="java.math.BigDecimal">272271</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>NORMAL</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>FKI_DAPER_TITULO</name>
+            <identifier class="java.math.BigDecimal">272271</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>false</systemGenerated>
+    </index>
+    <index>
+      <name>SYS_C0073254</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>DPTIPDOC</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPTIPDOC</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>SYS_C0073254</name>
+                  <identifier class="java.math.BigDecimal">272104</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+        <columnExpression>
+          <expressionSource>DPNRODOC</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>DPNRODOC</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>SYS_C0073254</name>
+                  <identifier class="java.math.BigDecimal">272104</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SYS_C0073254</name>
+            <identifier class="java.math.BigDecimal">272104</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </index>
+    <index>
+      <name>UNIQUE_DAPER</name>
+      <columnExpressions>
+        <columnExpression>
+          <expressionSource>ID_DAPER</expressionSource>
+          <orderType>ASC</orderType>
+          <properties>
+            <entry>
+              <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+              <value class="oracle.javatools.db.ReferenceID">
+                <name>ID_DAPER</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>UNIQUE_DAPER</name>
+                  <identifier class="java.math.BigDecimal">272243</identifier>
+                  <parent class="oracle.javatools.db.ReferenceID">
+                    <name>DAPER</name>
+                    <schemaName>PERSONALSFE</schemaName>
+                    <type>TABLE</type>
+                  </parent>
+                  <schemaName>PERSONALSFE</schemaName>
+                  <type>INDEX</type>
+                </parent>
+                <type>IndexObject</type>
+              </value>
+            </entry>
+          </properties>
+        </columnExpression>
+      </columnExpressions>
+      <indexType>UNIQUE</indexType>
+      <parallelDegree>1</parallelDegree>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>UNIQUE_DAPER</name>
+            <identifier class="java.math.BigDecimal">272243</identifier>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>DAPER</name>
+              <schemaName>PERSONALSFE</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <schemaName>PERSONALSFE</schemaName>
+            <type>INDEX</type>
+          </value>
+        </entry>
+        <entry>
+          <key>OracleStorageProperties</key>
+          <value class="oracle.javatools.db.ora.OracleStorageProperties">
+            <bufferMode>DEFAULT</bufferMode>
+            <initialExtent>65536</initialExtent>
+            <initrans>2</initrans>
+            <logging>true</logging>
+            <maxExtent>0</maxExtent>
+            <minExtent>1</minExtent>
+            <nextExtent>1048576</nextExtent>
+            <percentFree>10</percentFree>
+            <tablespaceID class="oracle.javatools.db.ReferenceID">
+              <name>TBS_PERSONAL</name>
+              <type>TABLESPACE</type>
+            </tablespaceID>
+          </value>
+        </entry>
+      </properties>
+      <reverse>false</reverse>
+      <schema>
+        <name>PERSONALSFE</name>
+      </schema>
+      <systemGenerated>true</systemGenerated>
+    </index>
+  </indexes>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">Aconcagua</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>DAPER</name>
+        <identifier class="java.math.BigDecimal">828332</identifier>
+        <schemaName>PERSONALSFE</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>0</maxExtent>
+        <minExtent>1</minExtent>
+        <percentFree>10</percentFree>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>TBS_PERSONAL</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleTableProperties</key>
+      <value class="oracle.javatools.db.ora.OracleTableProperties">
+        <parallelDegree>1</parallelDegree>
+        <tableCompression>NOCOMPRESS</tableCompression>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+  </properties>
+  <schema>
+    <name>PERSONALSFE</name>
+  </schema>
+</table>

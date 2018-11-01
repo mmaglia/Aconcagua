@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+
+.AFDefaultFont:alias {
+    font-size: 14px;
+}
+
+.AFGlobalBackgroundColor:alias {
+    color: #005200;
+}
+
+.AFGlobalSelectedColor:alias {
+    color: #005200;
+}
+
+.AFGlobalSelectedBorderColor:alias {
+    color: #005200;
+}
+
+.AFGlobalTabDisabledColor:alias {
+    color: #2FC72F;
+}
+
+.AFGlobalTabBorderDisabledColor:alias {
+    color: #3CE33C;
+}
+
+.AFButtonGradientStartActiveColor:alias {
+    color: #003011;
+}
+
+.AFButtonBorderTopActiveColor:alias {
+    color: #0B5325;
+}
+
+.AFButtonBorderActiveColor:alias {
+    color: #053114;
+}
+/*INFO: Color value exceeded range after adjustment: HSL(141, 98%, -6%)*/
+.AFButtonGradientEndActiveColor:alias {
+    color: #000000;
+}
+
+.AFButtonGradientStartColor:alias {
+    color: #005524;
+}
+
+.AFButtonBorderBottomColor:alias {
+    color: #1A974F;
+}
+
+.AFButtonBorderColor:alias {
+    color: #18944C;
+}
+/*INFO: Color value exceeded range after adjustment: HSL(145, 101%, 22%)*/
+.AFButtonGradientEndColor:alias {
+    color: #007431;
+}
+
+.AFButtonGradientStartDisabledColor:alias {
+    color: #5AA075;
+}
+
+.AFButtonBorderDisabledColor:alias {
+    color: #80B795;
+}
+
+.AFButtonGradientEndDisabledColor:alias {
+    color: #6CAC85;
+}
+
+.AFButtonForeground:alias {
+    color: #FFFFFF;
+}
+
+af|commandButton:text-only, af|goButton:text-only {
+    color: #FFFFFF;
+}
+
+af|button::text {
+    color: #FFFFFF;
+}
+
+af|commandToolbarButton::text {
+    color: #FFFFFF;
+}
+
+af|table::data-row:hover af|column::data-cell {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+af|table::data-row:hover af|column::banded-data-cell {
+    background-color: #FFFFFF;
+    color: #000000;
+}

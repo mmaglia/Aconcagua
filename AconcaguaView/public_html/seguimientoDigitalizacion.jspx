@@ -1,0 +1,461 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich" xmlns:h="http://java.sun.com/jsf/html">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <f:view>
+        <af:document title="Poder Judicial de la Provincia de Santa Fe" id="d1">
+            <af:serverListener type="onLoadEvent" method="#{detalle.setLabelVersion}"/>
+            <af:clientListener type="load" method="lanzarOnLoad"/>
+            <af:resource type="javascript">
+              function lanzarOnLoad(event) {
+                  AdfCustomEvent.queue(event.getSource(), "onLoadEvent",{},false);
+                  return true;
+              }
+            </af:resource>
+            <af:form id="f1" usesUpload="true">
+                <af:resource type="javascript">
+                  function clickEnGrilla(evt) {
+
+                      var table = evt.getSource();
+                      AdfCustomEvent.queue(table, "TableClickEvent", 
+                      {
+                      },
+                      false);
+                      evt.cancel();
+                  }
+
+                  function onLoadPreviewSeguimiento(evt) {
+                      var frame = document.getElementById('ifVistaPreviaDetalle');
+                      // Redimensiono la altura y el ancho del previsualizador dependiendo del ancho de pantalla
+                      var newHeight = 308;
+                      var newWidht = 1280;
+                      if (screen.height &gt; 1000) {
+                          newHeight = 610;
+                          newWidht = 1840;
+                      }
+
+                      frame.style.height = newHeight + "px";
+                      frame.style.width = newWidht + "px";
+                  }
+                </af:resource>
+                <af:panelGridLayout id="pgl1">
+                    <af:gridRow id="gr1">
+                        <af:gridCell width="100%" halign="stretch" valign="top" id="gc1">
+                            <af:decorativeBox theme="dark" id="db2">
+                                <f:facet name="center">
+                                    <af:decorativeBox theme="medium" id="db1" styleClass="AFStretchWidth">
+                                        <f:facet name="center">
+                                            <!-- Content -->
+                                            <af:panelTabbed position="above" id="pt1"
+                                                            binding="#{seguimiento.tabbedPanel}">
+                                                <af:showDetailItem id="tabBusqueda" text="B&#250;squeda de Legajos"
+                                                                   icon="/graphics/lupa.png" disclosed="true"
+                                                                   disclosureListener="#{seguimiento.initSeguimiento}">
+                                                    <af:panelFormLayout id="pfl5">
+                                                        <f:facet name="footer"/>
+                                                        <af:panelSplitter id="ps1" splitterPosition="700"
+                                                                          disabled="true">
+                                                            <f:facet name="first">
+                                                                <af:table value="#{bindings.daperFindAll.collectionModel}"
+                                                                          var="row"
+                                                                          rows="#{bindings.daperFindAll.rangeSize}"
+                                                                          emptyText="#{bindings.daperFindAll.viewable ? 'No hay datos para mostrar.' : 'Acceso Denegado.'}"
+                                                                          rowBandingInterval="1"
+                                                                          columnStretching="column:c2"
+                                                                          selectedRowKeys="#{bindings.daperFindAll.collectionModel.selectedRow}"
+                                                                          selectionListener="#{bindings.daperFindAll.collectionModel.makeCurrent}"
+                                                                          rowSelection="single"
+                                                                          filterModel="#{bindings.daperFindAllQuery.queryDescriptor}"
+                                                                          filterVisible="true" scrollPolicy="scroll"
+                                                                          queryListener="#{seguimiento.onQuery}"
+                                                                          varStatus="vs" id="t1" fetchSize="40"
+                                                                          binding="#{seguimiento.tablaBusqueda}">
+                                                                    <af:clientListener method="clickEnGrilla"
+                                                                                       type="selection"/>
+                                                                     
+                                                                    <af:serverListener type="TableClickEvent"
+                                                                                       method="#{seguimiento.clickEnFila}"/>
+                                                                    <af:column sortProperty="#{bindings.daperFindAll.hints.dpnroleg.name}"
+                                                                               filterable="true" width="200px"
+                                                                               headerText="Nro. de Legajo" id="c1">
+                                                                        <af:outputText value="#{row.dpnroleg}"
+                                                                                       shortDesc="#{bindings.daperFindAll.hints.dpnroleg.tooltip}"
+                                                                                       id="ot2">
+                                                                            <af:convertNumber groupingUsed="false"
+                                                                                              pattern="#{bindings.daperFindAll.hints.dpnroleg.format}"/>
+                                                                        </af:outputText>
+                                                                        <f:facet name="filter">
+                                                                            <af:inputText label="" id="it11"
+                                                                                          placeholder="Ingrese Nro. de Legajo"
+                                                                                          value="#{vs.filterCriteria.dpnroleg}"/>
+                                                                        </f:facet>
+                                                                    </af:column>
+                                                                    <af:column sortProperty="#{bindings.daperFindAll.hints.dpapynom.name}"
+                                                                               filterable="true" width="350px"
+                                                                               headerText="Apellido y Nombre" id="c2">
+                                                                        <af:outputText value="#{row.dpapynom}"
+                                                                                       shortDesc="#{bindings.daperFindAll.hints.dpapynom.tooltip}"
+                                                                                       id="ot3"/>
+                                                                        <f:facet name="filter">
+                                                                            <af:inputText label="" id="it12"
+                                                                                          placeholder="Ingrese Apellido y Nombres (minimo 3 caracteres)"
+                                                                                          value="#{vs.filterCriteria.dpapynom}"/>
+                                                                        </f:facet>
+                                                                    </af:column>
+                                                                    <af:column sortProperty="#{bindings.daperFindAll.hints.dpnrodoc.name}"
+                                                                               filterable="true" width="130px"
+                                                                               headerText="Nro. de Documento" id="c3">
+                                                                        <af:outputText value="#{row.dpnrodoc}"
+                                                                                       shortDesc="#{bindings.daperFindAll.hints.dpnrodoc.tooltip}"
+                                                                                       id="ot4">
+                                                                            <af:convertNumber groupingUsed="false"
+                                                                                              pattern="#{bindings.daperFindAll.hints.dpnrodoc.format}"/>
+                                                                        </af:outputText>
+                                                                        <f:facet name="filter">
+                                                                            <af:inputText label="" id="it13"
+                                                                                          placeholder="Ingrese Nro. de Documento"
+                                                                                          value="#{vs.filterCriteria.dpnrodoc}"/>
+                                                                        </f:facet>
+                                                                    </af:column>
+                                                                </af:table>
+                                                            </f:facet>
+                                                            <f:facet name="second">
+                                                                <af:panelGroupLayout id="pgl12" layout="scroll">
+                                                                    <af:outputText value="&lt;h2>&lt;center>Grupos Digitalizados&lt;/center>&lt;/h2>"
+                                                                                   id="ot17" escape="false"/>
+                                                                    <af:outputText id="ot23" partialTriggers="t1"
+                                                                                   inlineStyle="margin-left: 20px; font-weight: bold;"
+                                                                                   value="#{bindings.dpapynom.inputValue}"/>
+                                                                    <af:listView id="lv1" var="item"
+                                                                                 value="#{seguimiento.multimedias}"
+                                                                                 binding="#{seguimiento.richListView}">
+                                                                        <f:facet name="groupHeaderStamp"/>
+                                                                        <af:listItem id="li1"
+                                                                                     inlineStyle="border-bottom: 1px solid Gray !important; height: 70px;">
+                                                                            <af:outputText value="#{item.tipoMultimedia.idTipoMultimedia}"
+                                                                                           visible="false"
+                                                                                           binding="#{seguimiento.txtIdGrupo}"
+                                                                                           id="ot6"/>
+                                                                            <af:panelGroupLayout id="pgl2"
+                                                                                                 layout="horizontal">
+                                                                                <af:panelGroupLayout id="pgl3"
+                                                                                                     layout="vertical"
+                                                                                                     inlineStyle="width: 140px; text-align: center;">
+                                                                                    <af:image source="/graphics/#{item.rutaIcono}"
+                                                                                              shortDesc="Grupo" id="i2"
+                                                                                              inlineStyle="width: 64px; height: 64px;"/>
+                                                                                </af:panelGroupLayout>
+                                                                                <af:panelGroupLayout id="pgl7"
+                                                                                                     layout="vertical"
+                                                                                                     inlineStyle="min-width:33%; text-align: left;">
+                                                                                    <af:panelGroupLayout layout="horizontal" inlineStyle="font-weight: bold; margin-left: 55px; font-size: 14px;"
+                                                                                                         id="pgl14">
+                                                                                        <af:outputText value="#{item.tipoMultimedia.descripcion}"
+                                                                                                       id="ot10"                                                                                                       
+                                                                                                       escape="false"/>
+                                                                                    </af:panelGroupLayout>
+                                                                                    <af:panelGroupLayout id="pgl8"
+                                                                                                         layout="horizontal">
+                                                                                        <af:outputText value="&lt;b>Cantidad:&lt;/b>"
+                                                                                                       id="ot11"
+                                                                                                       escape="false"/>
+                                                                                        <af:outputText value="#{item.cantidadDigitalizados}"
+                                                                                                       id="ot14"
+                                                                                                       inlineStyle="margin-left: 5px"/>
+                                                                                    </af:panelGroupLayout>
+                                                                                    <af:panelGroupLayout id="pgl9"
+                                                                                                         layout="horizontal">
+                                                                                        <af:outputText value="&lt;b>&#218;ltima digitalizaci&#243;n:&lt;/b>"
+                                                                                                       id="ot15"
+                                                                                                       escape="false"/>
+                                                                                        <h:outputText value="#{item.ultimaDigitalizaci&#243;n}"
+                                                                                                      id="ot16"
+                                                                                                      style="margin-left: 5px">
+                                                                                            <af:convertDateTime dateStyle="medium"/>
+                                                                                        </h:outputText>
+                                                                                    </af:panelGroupLayout>
+                                                                                </af:panelGroupLayout>
+                                                                                <af:panelGroupLayout id="pgl11"
+                                                                                                     layout="vertical"
+                                                                                                     inlineStyle="width: 100px; margin-left: 40px">
+                                                                                    <af:link text="Ver Detalles"
+                                                                                             action="#{seguimiento.abrirTabDetalle}"
+                                                                                             inlineStyle="font-weight: bold; text-decoration: underline;"
+                                                                                             id="l1"/>
+                                                                                </af:panelGroupLayout>
+                                                                            </af:panelGroupLayout>
+                                                                        </af:listItem>
+                                                                    </af:listView>
+                                                                </af:panelGroupLayout>
+                                                            </f:facet>
+                                                        </af:panelSplitter>
+                                                    </af:panelFormLayout>
+                                                </af:showDetailItem>
+                                                <af:showDetailItem id="tabDetalle" text="Detalle"
+                                                                   icon="/graphics/detalle.png"
+                                                                   disclosureListener="#{detalle.initDetalleSeguimiento}">
+                                                    <af:panelFormLayout id="pfl3" maxColumns="1" rows="7">
+                                                        <f:facet name="footer">
+                                                            <af:panelGroupLayout id="pg16" layout="horizontal"
+                                                                                 halign="center">
+                                                                <af:button text="Descargar Documento"
+                                                                           inlineStyle="margin-right: 5px"
+                                                                           shortDesc="Descarga el documento digitalizado actual"
+                                                                           id="b10">
+                                                                    <af:fileDownloadActionListener filename="#{bindings.nombreArchivo.inputValue}"
+                                                                                                   method="#{detalle.descargarArchivo}"/>
+                                                                </af:button>
+                                                                <af:spacer width="2" height="20" id="s8"
+                                                                           inlineStyle="background: Gray; margin-left: 10px; margin-right: 10px"/>
+                                                                <af:button text="Volver" id="b8"
+                                                                           action="#{seguimiento.abrirTabBusqueda}"/>
+                                                            </af:panelGroupLayout>
+                                                        </f:facet>
+                                                        <af:panelSplitter id="ps4" splitterPosition="880"
+                                                                          disabled="true">
+                                                            <f:facet name="first">
+                                                                <af:panelFormLayout id="pfl4" maxColumns="3" rows="1"
+                                                                                    inlineStyle="padding-left: 20%;">
+                                                                    <af:panelGroupLayout id="pg17" layout="horizontal"
+                                                                                         halign="center">
+                                                                        <af:outputText value="#{bindings.dpapynom.inputValue}"
+                                                                                       id="ot12"
+                                                                                       inlineStyle="font-size:large; padding-right: 10px;"/>
+                                                                        <af:outputText value="#{bindings.dptipdoc.inputValue == 1 ? 'DNI' : bindings.dptipdoc.inputValue == 2 ? 'LE' : bindings.dptipdoc.inputValue == 3 ? 'LC' : bindings.dptipdoc.inputValue == 4 ? 'CI' : bindings.dptipdoc.inputValue == 5 ? 'PASAPORTE' : 'OTROS'}: #{bindings.dpnrodoc.inputValue}"
+                                                                                       id="it8"
+                                                                                       inlineStyle="font-size:large;"
+                                                                                       binding="#{detalle.txtNroDocumentoPersona}"></af:outputText>
+                                                                        <af:outputText value="#{bindings.dptipdoc.inputValue}"
+                                                                                       binding="#{detalle.txtTipoDocumentoPersona}"
+                                                                                       id="ot13" visible="false"></af:outputText>
+                                                                    </af:panelGroupLayout>
+                                                                </af:panelFormLayout>
+                                                            </f:facet>
+                                                            <f:facet name="second"/>
+                                                        </af:panelSplitter>
+                                                        <af:separator id="s4"/>
+                                                        <af:panelSplitter id="ps3" splitterPosition="800"
+                                                                          disabled="true">
+                                                            <f:facet name="first">
+                                                                <af:table value="#{bindings.Multimedia.collectionModel}"
+                                                                          var="row" binding="#{detalle.tablaDetalles}"
+                                                                          rows="#{bindings.Multimedia.rangeSize}"
+                                                                          emptyText="#{bindings.Multimedia.viewable ? 'No data to display.' : 'Access Denied.'}"
+                                                                          rowBandingInterval="1"
+                                                                          selectedRowKeys="#{bindings.Multimedia.collectionModel.selectedRow}"
+                                                                          selectionListener="#{detalle.refrescarGrilla}"
+                                                                          rowSelection="single" fetchSize="6"
+                                                                          filterModel="#{bindings.MultimediaQuery.queryDescriptor}"
+                                                                          filterVisible="false"
+                                                                          columnStretching="column:c13"
+                                                                          queryListener="#{bindings.MultimediaQuery.processQuery}"
+                                                                          varStatus="vs" id="t3" visible="true"
+                                                                          partialTriggers="::b4 ::b5 ::b6 ::b7">
+                                                                    <af:column sortProperty="#{bindings.Multimedia.hints.fecha.name}"
+                                                                               filterable="false"
+                                                                               headerText="Fecha de Escaneado" id="c10"
+                                                                               width="130px" align="center">
+                                                                        <f:facet name="filter">
+                                                                            <af:inputDate value="#{bindings.MultimediaQuery.queryDescriptor.filterConjunctionCriterion.criterionMap.fecha.value}"
+                                                                                          id="id1">
+                                                                                <af:convertDateTime pattern="#{bindings.Multimedia.hints.fecha.format}"/>
+                                                                            </af:inputDate>
+                                                                        </f:facet>
+                                                                        <af:outputText value="#{row.fecha}"
+                                                                                       shortDesc="#{bindings.Multimedia.hints.fecha.tooltip}"
+                                                                                       id="ot18">
+                                                                            <af:convertDateTime pattern="#{bindings.Multimedia.hints.fecha.format}"/>
+                                                                        </af:outputText>
+                                                                    </af:column>
+                                                                    <af:column sortProperty="#{bindings.Multimedia.hints.fojas.name}"
+                                                                               filterable="false"
+                                                                               headerText="Cantidad de Fojas"
+                                                                               width="130px" align="right" id="c7">
+                                                                        <af:outputText value="#{row.fojas}"
+                                                                                       shortDesc="#{bindings.Multimedia.hints.fojas.tooltip}"
+                                                                                       id="ot9">
+                                                                            <af:convertNumber groupingUsed="false"
+                                                                                              pattern="#{bindings.Multimedia.hints.fojas.format}"/>
+                                                                        </af:outputText>
+                                                                    </af:column>
+                                                                    <af:column sortProperty="#{bindings.Multimedia.hints.idMultimedia.name}"
+                                                                               filterable="false" align="right"
+                                                                               headerText="Id. del Archivo" id="c4">
+                                                                        <af:outputText value="#{row.idMultimedia}"
+                                                                                       shortDesc="#{bindings.Multimedia.hints.idMultimedia.tooltip}"
+                                                                                       id="ot5">
+                                                                            <af:convertNumber groupingUsed="false"
+                                                                                              pattern="#{bindings.Multimedia.hints.idMultimedia.format}"/>
+                                                                        </af:outputText>
+                                                                    </af:column>
+                                                                    <af:column sortProperty="#{bindings.Multimedia.hints.descripcion.name}"
+                                                                               filterable="false"
+                                                                               headerText="Descripci&#243;n" width="130px"
+                                                                               id="c13">
+                                                                        <af:outputText value="#{row.descripcion}"
+                                                                                       shortDesc="#{bindings.Multimedia.hints.descripcion.tooltip}"
+                                                                                       id="ot19"/>                                                                            
+                                                                    </af:column>
+                                                                    <af:column sortProperty="#{bindings.Multimedia.hints.tipoMultimedia.descripcion.name}"
+                                                                               filterable="false" headerText="Grupo"
+                                                                               width="120px" id="c12">
+                                                                        <af:outputText value="#{row.tipoMultimedia.bindings.descripcion.inputValue}"
+                                                                                       shortDesc="#{bindings.Multimedia.hints.tipoMultimedia.descripcion.tooltip}"
+                                                                                       rendered="#{row.tipoMultimedia != null}"
+                                                                                       id="ot7"/>
+                                                                    </af:column>
+                                                                    <af:column sortProperty="#{bindings.Multimedia.hints.tipoExtension.descripcion.name}"
+                                                                               filterable="false"
+                                                                               headerText="Extensi&#243;n" id="c6">
+                                                                        <af:outputText value="#{row.tipoExtension.bindings.descripcion.inputValue}"
+                                                                                       shortDesc="#{bindings.Multimedia.hints.tipoExtension.descripcion.tooltip}"
+                                                                                       rendered="#{row.tipoExtension != null}"
+                                                                                       id="ot20"/>
+                                                                    </af:column>
+                                                                </af:table>
+                                                            </f:facet>
+                                                            <f:facet name="second">
+                                                                <af:panelGroupLayout id="pgl5" halign="left"
+                                                                                     layout="vertical">
+                                                                    <af:panelFormLayout id="pfl2" partialTriggers="t3">
+                                                                        <af:panelGroupLayout id="pgl6">
+                                                                            <af:inputText value="#{bindings.nombreArchivo.inputValue}"
+                                                                                          simple="true" readOnly="true"
+                                                                                          binding="#{detalle.txtNombreArchivoSeguimiento}"
+                                                                                          required="#{bindings.nombreArchivo.hints.mandatory}"
+                                                                                          columns="#{bindings.nombreArchivo.hints.displayWidth}"
+                                                                                          maximumLength="#{bindings.nombreArchivo.hints.precision}"
+                                                                                          id="it1" rendered="true"
+                                                                                          label="aux" visible="false">
+                                                                                <f:validator binding="#{bindings.nombreArchivo.validator}"/>
+                                                                            </af:inputText>
+                                                                        </af:panelGroupLayout>
+                                                                        <f:facet name="footer">
+                                                                            <af:panelGroupLayout id="pgl10"
+                                                                                                 layout="vertical">
+                                                                                <af:panelGroupLayout layout="horizontal"
+                                                                                                     id="pgl4">
+                                                                                    <af:button actionListener="#{bindings.First.execute}"
+                                                                                               text="Primero"
+                                                                                               action="#{detalle.refrescarPrevisualizacion}"
+                                                                                               disabled="#{!bindings.First.enabled}"
+                                                                                               partialSubmit="true"
+                                                                                               inlineStyle="margin: 3px;"
+                                                                                               id="b4"/>
+                                                                                    <af:button actionListener="#{bindings.Previous.execute}"
+                                                                                               text="Previo"
+                                                                                               action="#{detalle.refrescarPrevisualizacion}"
+                                                                                               disabled="#{!bindings.Previous.enabled}"
+                                                                                               partialSubmit="true"
+                                                                                               inlineStyle="margin: 3px;"
+                                                                                               id="b5"/>
+                                                                                    <af:button actionListener="#{bindings.Next.execute}"
+                                                                                               text="Siguiente"
+                                                                                               action="#{detalle.refrescarPrevisualizacion}"
+                                                                                               disabled="#{!bindings.Next.enabled}"
+                                                                                               partialSubmit="true"
+                                                                                               inlineStyle="margin: 3px;"
+                                                                                               id="b6"/>
+                                                                                    <af:button actionListener="#{bindings.Last.execute}"
+                                                                                               text="&#218;ltimo"
+                                                                                               action="#{detalle.refrescarPrevisualizacion}"
+                                                                                               disabled="#{!bindings.Last.enabled}"
+                                                                                               partialSubmit="true"
+                                                                                               inlineStyle="margin: 3px;"
+                                                                                               id="b7"/>
+                                                                                </af:panelGroupLayout>
+                                                                                <af:button shortDesc="Refrescar Previsualización"
+                                                                                           inlineStyle="margin-left: 60px; margin-top: 10px;"
+                                                                                           text="Refrescar Vista Previa"
+                                                                                           id="b9" partialSubmit="true"
+                                                                                           actionListener="#{detalle.refrescarPrevisualizacionSeguimiento}"/>
+                                                                            </af:panelGroupLayout>
+                                                                        </f:facet>
+                                                                    </af:panelFormLayout>
+                                                                </af:panelGroupLayout>
+                                                            </f:facet>
+                                                        </af:panelSplitter>
+                                                        <af:separator id="s5"/>
+                                                        <af:panelBox text="Previsualizaci&#243;n" id="pb2"
+                                                                     showDisclosure="false">
+                                                            <f:facet name="toolbar">
+                                                                <af:outputText id="link" value="Maximizar"
+                                                                               inlineStyle="color: #003D5B; font-weight: bold; cursor: pointer;">
+                                                                    <af:showPopupBehavior popupId="popupFileSeg"
+                                                                                          triggerType="click"
+                                                                                          alignId="link"/>
+                                                                </af:outputText>
+                                                            </f:facet>
+                                                            <af:inlineFrame id="ifVistaPreviaDetalle"
+                                                                            shortDesc="Vista Previa"
+                                                                            source="/previewFileServlet?path=#{detalle.path == null ? 'No' : detalle.path}"
+                                                                            partialTriggers="t3" sizing="preferred"
+                                                                            binding="#{detalle.frameVP}">
+                                                                <af:clientListener type="inlineFrameLoad"
+                                                                                   method="onLoadPreviewSeguimiento"/>
+                                                            </af:inlineFrame>
+                                                        </af:panelBox>
+                                                    </af:panelFormLayout>
+                                                    <af:popup id="popupFileSeg" animate="default"
+                                                              contentDelivery="lazyUncached">
+                                                        <af:panelWindow modal="true" title="Previsualizaci&#243;n"
+                                                                        contentHeight="625" contentWidth="700"
+                                                                        resize="on" id="pw1">
+                                                            <af:inlineFrame shortDesc="Vista Previa Maximizada"
+                                                                            source="/previewFileServlet?path=#{detalle.path == null ? 'No' : detalle.path}"
+                                                                            styleClass="AFStretchWidth"
+                                                                            inlineStyle="height:600px;" id="if2"></af:inlineFrame>
+                                                        </af:panelWindow>
+                                                    </af:popup>
+                                                </af:showDetailItem>
+                                            </af:panelTabbed>
+                                        </f:facet>
+                                        <f:facet name="top">
+                                            <af:panelStretchLayout id="psl1" startWidth="218px" endWidth="145px">
+                                                <f:facet name="start">
+                                                    <af:image inlineStyle="top: -6px; left:6px;"
+                                                              source="/graphics/logo_pjsf.png" shortDesc="" id="i1"/>
+                                                </f:facet>
+                                                <f:facet name="end">
+                                                    <af:panelGroupLayout id="pgl15" layout="vertical">
+                                                        <af:panelGroupLayout layout="horizontal" id="pgl13"
+                                                                             inlineStyle="margin-top: 10px;">
+                                                            <af:outputText value="Usuario:" id="ot21"
+                                                                           inlineStyle="color: White; font-size:14px; margin-right: 3px;"/>
+                                                            <af:outputText value="#{securityContext.userName}" id="ot22"
+                                                                           inlineStyle="color: White; font-size:14px; font-style: italic;"/>
+                                                            <af:spacer width="10" height="10" id="s2"/>
+                                                            <af:link text="Salir"
+                                                                     destination="adfAuthentication?logout=true&amp;end_url=/faces/seguimientoDigitalizacion.jspx"
+                                                                     inlineStyle="color:White; font-size:14px; font-weight:bold; text-decoration: underline;"
+                                                                     id="gl1"/>
+                                                        </af:panelGroupLayout>
+                                                        <af:outputText binding="#{detalle.txtVersion}"
+                                                                       clientComponent="true" value="#{detalle.version}"
+                                                                       id="ot24"
+                                                                       inlineStyle="color:White; font-size:11px;"/>
+                                                    </af:panelGroupLayout>
+                                                </f:facet>
+                                                <f:facet name="center">
+                                                    <af:outputText value="Seguimiento Digitalizaci&#243;n de Legajos del Personal"
+                                                                   id="ot1"
+                                                                   inlineStyle="font-size:xx-large; text-align:center;"/>
+                                                </f:facet>
+                                            </af:panelStretchLayout>
+                                        </f:facet>
+                                    </af:decorativeBox>
+                                </f:facet>
+                            </af:decorativeBox>
+                        </af:gridCell>
+                    </af:gridRow>
+                </af:panelGridLayout>
+            </af:form>
+            <f:facet name="metaContainer">
+                <af:outputText escape="false"
+                               value='&lt;link href="#{facesContext.externalContext.requestContextPath}/graphics/favicon.ico" rel="shortcut icon">'
+                               id="ot8"/>
+            </f:facet>
+        </af:document>
+    </f:view>
+</jsp:root>
+    
